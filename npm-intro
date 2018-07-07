@@ -1,0 +1,144 @@
+
+NPM Registery
+
+1. To get the information of any package
+    
+url:registery.npmjs.org/underscore
+
+2. To go directly to any package package
+
+url: npm.im/underscore  
+
+
+
+
+
+NPM Search
+
+1. To Search info related to any package
+
+> npm search keyword
+
+keyword will be searched package and in package description
+it is slow
+
+
+
+
+
+NPM List
+
+1. To list all packages installed in current project
+>npm list 
+
+2. To list all packages installed in current project in dev dependencies
+>npm list --save-dev
+
+3. To list all packages installed globally
+>npm list -g
+
+
+Pruning
+
+1. To remove any package
+Comparing the installed packages with package.json if not find then it will remove it from both
+>npm prune
+
+2. To remove any package
+>npm prune express
+
+3. To remove all dev dependencies
+>npm prune --production
+
+
+
+
+
+NPM Repo
+
+1. To see oficial website of any package and view source code
+>npm repo express
+
+
+
+
+Upgrading NPM
+
+1. To update the npm 
+>npm i npm@latest -g 
+
+
+
+
+
+
+
+NPM init
+
+1.To make package.json file 
+>npm init
+
+2. To make package.json file with default options
+>npm init -y
+
+
+
+
+
+NPM Script
+
+1.
+>npm test
+2.
+>npm start
+
+3. To run any Script
+>npm run script-name
+
+
+
+
+
+
+NPM Publishing packages
+1.Create your account on npm
+
+2.To add user
+>npm adduser
+
+3.
+
+To publish package
+1.Set up project in git
+2.Create a package.json file
+3. >npm publish
+
+4.To get info about the published package
+>npm info package-name
+
+5. To update your package
+
+1. Make changes to your code
+2. change the version
+3.Walk through the same publish process
+
+6. To see npm version patch
+>npm version patch
+
+7. To show git tags in your published package
+>git tag
+
+
+
+
+Releasing an Alpha and Beta version
+
+1. change the package.json file in version
+"version":"1.3.0-beta.0"
+
+2. 
+>npm publish --tag beta
+
+3. To install beta version
+> npm i package @beta
+
